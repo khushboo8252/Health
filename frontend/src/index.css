@@ -1,0 +1,176 @@
+/* Global Styles */
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  /* background: #f1f5f9; */
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+button:focus {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Full-Width Form Container */
+.form-container {
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: auto;
+}
+
+/* Input Box */
+.input-box {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-box:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Submit Button */
+.submit-button {
+  background: #007bff;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Dropdown */
+.dropdown {
+  margin-top: 20px;
+}
+
+/* Full-Width Response Container */
+.response-container {
+  margin-top: 25px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* Individual Response Item */
+.response-item {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-left: 6px solid #007bff;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.response-item:hover {
+  background: #eaf2ff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-container, .response-container {
+    width: 95%;
+    max-width: none;
+  }
+
+  .input-box, button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .response-item {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
